@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitTrack | Build Better Habits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Habit<span>Track.</span></a>
+        <p>Your daily growth journey 🌱</p>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <div>
+                <p class="eyebrow">YOUR PERSONAL HABIT TRACKER</p>
+                <h1>Small steps, <span>big changes.</span></h1>
+                <p class="subtitle">Build consistency, one day at a time.</p>
+            </div>
+            <div class="date-card">
+                <span>📅 TODAY</span>
+                <strong id="todayDate">Today</strong>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <span>Today's Habits</span>
+                <h2 id="totalHabits">0</h2>
+            </div>
+            <div class="stat-card">
+                <span>Completed</span>
+                <h2 id="completedHabits">0</h2>
+            </div>
+            <div class="stat-card">
+                <span>Daily Progress</span>
+                <h2 id="progressText">0%</h2>
+            </div>
+        </section>
+
+        <section class="progress-card">
+            <div class="progress-heading">
+                <h3>Daily Progress</h3>
+                <span id="progressMessage">Let's get started!</span>
+            </div>
+            <div class="progress-track">
+                <div id="progressBar" class="progress-fill"></div>
+            </div>
+        </section>
+
+        <section class="habit-section">
+            <div class="section-heading">
+                <div>
+                    <h2>My Habits</h2>
+                    <p>Every little effort counts.</p>
+                </div>
+                <button id="addHabitBtn" class="add-btn">+ Add Habit</button>
+            </div>
+
+            <form id="habitForm" class="habit-form hidden">
+                <input id="habitName" type="text"
+                    placeholder="Enter a habit name..." maxlength="60" required>
+                <button type="submit" class="add-btn">Save</button>
+                <button type="button" id="cancelBtn" class="cancel-btn">
+                    Cancel
+                </button>
+            </form>
+
+            <div id="habitList" class="habit-list"></div>
+            <p id="emptyMessage" class="empty-message">
+                🌱 No habits yet. Add your first habit to get started!
+            </p>
+        </section>
+
+        <footer>
+            <p>Made with 💚 by HabitTrack | Grow a little every day.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
